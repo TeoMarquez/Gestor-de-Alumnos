@@ -15,13 +15,6 @@ private static final String USUARIO = "tu_usuario";
 private static final String CONTRASENA = "tu_contraseña";
 ```
 
-### Verificar cuenta de usuario
-
-```java
-// Verifica si existe una cuenta de usuario con el nombre y contraseña proporcionados
-public static boolean verificarCuenta(String nombreUsuario, String contrasena) {...}
-```
-
 #### Funcionalidades principales
 
 - **Editar listas:** Permite acceder a funciones de edición de datos.
