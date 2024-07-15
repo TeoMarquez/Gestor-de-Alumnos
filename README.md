@@ -30,7 +30,7 @@ private static final String CONTRASENA = "tu_contraseña";
 
 1. **Clonar el Repositorio:**
    ```
-   git clone https://github.com/tu-usuario/Proyecto-Conversión-Imágenes.git
+   git clone https://github.com/TeoMarquez/Gestor-de-Alumnos
    ```
 2. **Instalar Dependencias:**
    - Asegúrate de tener añadido al proyecto el archivo que se encuentra en Componentes/mysql-connector-java-5.1.46.jar
