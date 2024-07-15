@@ -23,11 +23,10 @@ public class DB2 {
     
     // Datos de conexión a tu base de datos
     
-    // TODO PARA LA CONEXION AL XAMPP
     
-    private static final String URL = "jdbc:mysql://localhost:3306/app_acosta";
-    private static final String USUARIO = "root";
-    private static final String CONTRASENA = "12345678";
+    private static final String URL = "jdbc:mysql://localhost:3306/usa el nombre de tu base de datos";
+    private static final String USUARIO = "usa tu usuario";
+    private static final String CONTRASENA = "usa tu contraseña";
 
     // Método para obtener la conexión a la base de datos; se llamará en cada funcioon
     public static Connection obtenerConexion() {
@@ -51,10 +50,6 @@ public class DB2 {
             }
         }
     }
-
-       
-    // Esta mierda es para verificar si existe una cuenta con el nombre y contraseña que pusiste retorna verdadero o falso 
-    // (asi que podes llamarlo en un if para permitir cambiar de pantallas)
      
       public static boolean verificarCuenta(String nombreUsuario, String contrasena) {
         Connection conexion = null;
@@ -170,7 +165,7 @@ public class DB2 {
     }
 }
     
-    // Esta cagada retorna una lista al introducir el nombre que buscas
+    // Esto  retorna una lista al introducir el nombre que buscas
 
     public static List<String> buscarNombresPorLetra(char letra) {
         Connection conexion = null;
@@ -203,19 +198,7 @@ public class DB2 {
     }
 
         return nombres;
-        
-        //            StringBuilder nombresFormateados = new StringBuilder();
-        //            for (String nombre : nombresConLetra) {
-        //            nombresFormateados.append(nombre).append("\n");
-        //            }
-        //            textArea.setText(nombresFormateados.toString()); // Establece el contenido en el JTextArea
-        
-        //Algo asi queda el setText para cambiar el textArea   
     }
-
-    // Lo mismo pero buscando el curso, cuando lo llames del boton acordate de "Obtener que apretaste" y pasarlo como parametro.
-    // DATO DE VITAL IMPORTANCIA: la base de datos solo acepta de nombre 1ro,2do,3ro,4to,5to cualquier otra cosa generará error
-    // Para mostrar en el textArea funciona exactamente igual que el anterior
     
     public static List<String> buscarEstudiantesPorCurso(String cursoBuscado) {
         List<String> nombres = new ArrayList<>();
@@ -252,7 +235,6 @@ public class DB2 {
     }
     
     // LLamalo desde el boton, porque no tiene parametros
-    // Para mostrar en el textArea funciona exactamente igual que el anterior
 
      public static List<String> obtenerNombresEnOrdenAlfabetico() {
         List<String> nombres = new ArrayList<>();
@@ -284,9 +266,6 @@ public class DB2 {
     }
         return nombres;
     }
-
-    // LLamalo desde el boton, porque no tiene parametros
-    // Para mostrar en el textArea funciona exactamente igual que el anterior 
      
      public static List<String> obtenerNombresEnOrdenAlfabetico_ZA() {
         List<String> nombres = new ArrayList<>();
